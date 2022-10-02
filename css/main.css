@@ -35,10 +35,25 @@ main {
   color: white;
 }
 
-.container {
+body {
+  height: 100%;
+}
+
+.bg-image {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
   background-size: cover;
   background-position: center;
+  height: 100vh;
+}
+
+.landingpage {
+  height: 60vh;
+}
+.landingpage p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 header {
@@ -71,33 +86,63 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   flex-direction: column;
   text-align: center;
+  height: 100vh;
 }
 .content h1 {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-  padding: 2rem;
-}
-.content p {
-  display: flex;
-  justify-content: center;
-  font-size: 1.6rem;
-  padding: 2rem;
 }
 
 footer {
-  justify-content: center;
+  font-size: larger;
+  padding: 1rem;
 }
 footer ul {
   list-style-type: none;
-  padding: 0;
+  padding: 1rem;
+  padding-left: 5rem;
 }
 footer li {
+  padding: 0.5rem;
+}
+footer i {
+  padding-right: 10px;
+}
+
+#about {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+#about h2 {
+  text-align: center;
+}
+#about article {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+#about p {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem;
+}
+#about i {
+  font-size: 3rem;
+}
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px #888888;
+}
+
+.bi-quote::before {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=main.css.map */

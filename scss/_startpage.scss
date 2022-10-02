@@ -6,13 +6,22 @@ main {
   color: var.$text-color;
 }
 body {
+  height: 100%;
 }
-.container {
+.bg-image {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 .landingpage {
+  height: 60vh;
+  p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
 }
 
 header {
@@ -40,30 +49,28 @@ footer {
 
 .content {
   @include mix.center-all;
-  height: 80vh;
+
   flex-direction: column;
   text-align: center;
+  height: 100vh;
   h1 {
     @include mix.center;
     font-size: 2.5rem;
-    padding: 2rem;
-  }
-  p {
-    display: flex;
-    justify-content: center;
-    font-size: 1.6rem;
-    padding: 2rem;
   }
 }
 
 footer {
-  justify-content: center;
+  font-size: larger;
+  padding: 1rem;
   ul {
     list-style-type: none;
-    padding: 0;
+    padding: 1rem;
+    padding-left: 5rem;
   }
   li {
-    display: flex;
-    justify-content: center;
+    padding: 0.5rem;
+  }
+  i {
+    padding-right: 10px;
   }
 }
