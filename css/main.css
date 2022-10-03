@@ -30,6 +30,28 @@ body {
   border-radius: 10px;
   opacity: 0.9;
 }
+@media (min-width: 768px) {
+  .hamburger {
+    opacity: 0;
+  }
+}
+
+.fa-sharp.fa-solid.fa-circle-down {
+  color: white;
+  font-size: 2rem;
+}
+
+.fa-sharp.fa-solid.fa-circle-down.black {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#blackarrow {
+  text-decoration: none;
+}
 
 main {
   color: white;
@@ -53,14 +75,9 @@ main {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.3;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.107);
   height: 8vh;
 }
-
 nav {
   display: flex;
   justify-content: center;
@@ -68,10 +85,28 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+  width: 100%;
 }
 nav li {
   display: flex;
   justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: right;
+    font-size: xx-large;
+    padding: 1rem;
+    margin: 0;
+    padding-top: 0;
+  }
+  nav li {
+    padding: 1rem;
+  }
 }
 
 .content {
@@ -88,12 +123,13 @@ nav li {
   font-size: 2.5rem;
 }
 
+h2 {
+  text-align: center;
+}
+
 #about {
   background-color: rgb(255, 255, 255);
   color: black;
-}
-#about h2 {
-  text-align: center;
 }
 #about article {
   display: flex;

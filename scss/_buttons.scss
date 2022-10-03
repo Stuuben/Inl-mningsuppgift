@@ -1,3 +1,4 @@
+@use "mixins" as mix;
 .hamburger {
   width: 30px;
   height: 30px;
@@ -20,4 +21,24 @@
     border-radius: 10px;
     opacity: 0.9;
   }
+  @include mix.for-tablets {
+    opacity: 0;
+  }
+}
+
+.fa-sharp.fa-solid.fa-circle-down {
+  color: white;
+  font-size: 2rem;
+}
+
+.fa-sharp.fa-solid.fa-circle-down.black {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#blackarrow {
+  text-decoration: none;
 }
