@@ -5,9 +5,7 @@
 main {
   color: var.$text-color;
 }
-body {
-  height: 100%;
-}
+
 .bg-image {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
   background-size: cover;
@@ -43,10 +41,6 @@ nav {
   }
 }
 
-footer {
-  background-color: black;
-}
-
 .content {
   @include mix.center-all;
 
@@ -56,21 +50,5 @@ footer {
   h1 {
     @include mix.center;
     font-size: 2.5rem;
-  }
-}
-
-footer {
-  font-size: larger;
-  padding: 1rem;
-  ul {
-    list-style-type: none;
-    padding: 1rem;
-    padding-left: 5rem;
-  }
-  li {
-    padding: 0.5rem;
-  }
-  i {
-    padding-right: 10px;
   }
 }

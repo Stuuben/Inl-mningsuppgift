@@ -35,10 +35,6 @@ main {
   color: white;
 }
 
-body {
-  height: 100%;
-}
-
 .bg-image {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
   background-size: cover;
@@ -78,10 +74,6 @@ nav li {
   justify-content: center;
 }
 
-footer {
-  background-color: black;
-}
-
 .content {
   display: flex;
   justify-content: center;
@@ -94,22 +86,6 @@ footer {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-}
-
-footer {
-  font-size: larger;
-  padding: 1rem;
-}
-footer ul {
-  list-style-type: none;
-  padding: 1rem;
-  padding-left: 5rem;
-}
-footer li {
-  padding: 0.5rem;
-}
-footer i {
-  padding-right: 10px;
 }
 
 #about {
@@ -140,9 +116,44 @@ footer i {
   border-radius: 50%;
   box-shadow: 0px 0px 20px 5px #888888;
 }
+@media (min-width: 768px) {
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #about article {
+    width: 50%;
+  }
+}
 
 .bi-quote::before {
   transform: rotate(180deg);
+}
+
+footer {
+  background-color: black;
+  font-size: larger;
+  padding: 1rem;
+}
+footer ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+footer li {
+  padding: 0.5rem;
+}
+footer i {
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer ul {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

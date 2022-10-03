@@ -1,0 +1,27 @@
+@use "mixins" as mix;
+
+footer {
+  background-color: black;
+  font-size: larger;
+  padding: 1rem;
+
+  ul {
+    list-style-type: none;
+    padding: 1rem;
+  }
+  li {
+    padding: 0.5rem;
+  }
+  i {
+    padding-right: 10px;
+  }
+
+  @include mix.for-tablets {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+      padding: 0;
+    }
+  }
+}
