@@ -22,45 +22,6 @@ main {
   }
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0.107);
-  height: 8vh;
-
-  @include mix.for-tablets {
-  }
-}
-
-nav {
-  @include mix.center;
-  ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-  }
-  li {
-    display: flex;
-    justify-content: center;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  @include mix.for-tablets {
-    ul {
-      display: flex;
-      justify-content: right;
-      font-size: xx-large;
-      padding: 1rem;
-      margin: 0;
-      padding-top: 0;
-    }
-    li {
-      padding: 1rem;
-    }
-  }
-}
-
 .content {
   @include mix.center-all;
 

@@ -87,6 +87,11 @@ body {
   margin: 0;
   padding: 0;
 }
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
 
 .menu > li {
   margin: 0 1rem;
@@ -289,6 +294,10 @@ h2 {
   }
   #about article {
     width: 50%;
+    height: 50%;
+  }
+  #about p {
+    width: 30vw;
   }
 }
 
