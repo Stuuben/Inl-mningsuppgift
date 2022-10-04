@@ -6,15 +6,6 @@ body {
   height: 100%;
 }
 
-* {
-  font-family: "Times New Roman", Times, serif;
-  box-sizing: border-box;
-}
-
-.bg-image {
-  position: absolute;
-}
-
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -22,7 +13,7 @@ body {
   justify-content: flex-end;
   background-color: rgba($color: #ffffff14, $alpha: 0.1);
   color: #fff;
-  height: 50px;
+  height: 4vh;
   padding: 1em;
 }
 
@@ -35,7 +26,8 @@ body {
   a {
     text-decoration: none;
     color: white;
-    font-size: x-large;
+    font-size: 1.2rem;
+    font-weight: 100;
     &:hover {
       text-decoration: underline;
     }

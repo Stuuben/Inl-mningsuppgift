@@ -1,6 +1,6 @@
 @use "mixins" as mix;
 
-.hamburger {
+/* .hamburger {
   width: 30px;
   height: 30px;
   display: flex;
@@ -26,10 +26,11 @@
     opacity: 0;
   }
 }
-
+ */
 .fa-sharp.fa-solid.fa-circle-down {
   color: white;
   font-size: 2rem;
+  position: relative;
 }
 
 .fa-sharp.fa-solid.fa-circle-down.black {
@@ -42,9 +43,4 @@
 
 #blackarrow {
   text-decoration: none;
-}
-
-h2 {
-  vertical-align: center;
-  text-align: center;
 }
