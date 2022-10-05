@@ -3,7 +3,7 @@
 @use "mixins" as mix;
 
 main {
-  color: var.$text-color;
+  color: var.$color-primary;
 }
 
 .bg-image {

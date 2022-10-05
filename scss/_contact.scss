@@ -1,7 +1,8 @@
 @use "mixins" as mix;
+@use "variables" as var;
 
 footer {
-  background-color: black;
+  background-color: var.$color-secondary;
   font-size: larger;
   padding: 3em 3em 3em 3em;
 
@@ -15,6 +16,10 @@ footer {
   i {
     padding-right: 10px;
   }
+  a {
+    color: var.$color-primary;
+    text-decoration: none;
+  }
 
   @include mix.for-tablets {
     display: flex;
@@ -23,5 +28,12 @@ footer {
     ul {
       padding: 0;
     }
+  }
+}
+
+.social {
+  a {
+    text-decoration: none;
+    color: white;
   }
 }

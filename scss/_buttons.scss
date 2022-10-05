@@ -1,4 +1,23 @@
 @use "mixins" as mix;
+@use "variables" as var;
+
+.fa-sharp.fa-solid.fa-circle-down {
+  color: var.$color-primary;
+  font-size: 2rem;
+  position: relative;
+}
+
+.fa-sharp.fa-solid.fa-circle-down.black {
+  color: var.$color-secondary;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#blackarrow {
+  text-decoration: none;
+}
 
 /* .hamburger {
   width: 30px;
@@ -27,20 +46,3 @@
   }
 }
  */
-.fa-sharp.fa-solid.fa-circle-down {
-  color: white;
-  font-size: 2rem;
-  position: relative;
-}
-
-.fa-sharp.fa-solid.fa-circle-down.black {
-  color: black;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  padding: 1rem;
-}
-
-#blackarrow {
-  text-decoration: none;
-}
