@@ -1,33 +1,37 @@
 @use "mixins" as mix;
 @use "variables" as var;
 
+h4.member {
+  text-align: center;
+}
 h2 {
+  color: var.$color-secondary;
   text-align: center;
 }
 
-#about {
-  color: var.$color-secondary;
-
-  article {
+#team {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  p {
+
+  p.member__description {
     background-color: lightgray;
     border-radius: 5px;
     padding: 2rem;
     margin: 2rem;
+    color: var.$color-secondary;
   }
 
   i {
     font-size: 3rem;
   }
 
-  img {
-    width: 250px;
-    height: 250px;
+  img.member__picture {
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 5px #888888;
   }
@@ -35,7 +39,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    article {
+    section {
       width: 50%;
       height: 50%;
     }

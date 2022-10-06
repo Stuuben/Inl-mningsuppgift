@@ -1,14 +1,10 @@
 @use "mixins" as mix;
 @use "variables" as var;
 
-figure {
-}
-
 .white {
   color: var.$color-primary;
   font-size: 1.5rem;
   position: absolute;
-
   left: 0;
   right: 0;
   bottom: 10%;
@@ -26,31 +22,3 @@ figure {
 #blackarrow {
   text-decoration: none;
 }
-
-/* .hamburger {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 2vh;
-  &:hover {
-    cursor: pointer;
-  }
-  .lines {
-    min-width: 100%;
-
-    background-color: white;
-    padding: 3px;
-    border-radius: 10px;
-    opacity: 0.9;
-  }
-  @include mix.for-tablets {
-    opacity: 0;
-  }
-}
- */
