@@ -1,18 +1,32 @@
 @use "mixins" as mix;
 @use "variables" as var;
 
-.fa-sharp.fa-solid.fa-circle-down {
-  color: var.$color-primary;
-  font-size: 2rem;
-  position: relative;
+
+figure {
+ 
+
 }
 
-.fa-sharp.fa-solid.fa-circle-down.black {
+
+
+.white {
+  color: var.$color-primary;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 8vh;
+  right: 50%;
+  left: 48%;
+}
+
+
+.black {
   color: var.$color-secondary;
   display: flex;
   justify-content: center;
   text-decoration: none;
+  font-size: 1.5rem;
   padding: 1rem;
+
 }
 
 #blackarrow {

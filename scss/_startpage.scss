@@ -4,7 +4,9 @@
 
 main {
   color: var.$color-primary;
+  
 }
+
 
 .bg-image {
   background-image: url(/assets/negative-space-black-forest-dawn.jpg);
@@ -13,7 +15,8 @@ main {
   height: 100vh;
 }
 .landingpage {
-  height: 60vh;
+
+
   p {
     display: flex;
     justify-content: center;
@@ -23,7 +26,10 @@ main {
 }
 
 .content {
-  @include mix.center-all;
+  display: flex;
+  justify-content: center;
+
+ 
 
   flex-direction: column;
   text-align: center;
