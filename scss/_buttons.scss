@@ -1,23 +1,18 @@
 @use "mixins" as mix;
 @use "variables" as var;
 
-
 figure {
- 
-
 }
-
-
 
 .white {
   color: var.$color-primary;
   font-size: 1.5rem;
   position: absolute;
-  bottom: 8vh;
-  right: 50%;
-  left: 48%;
-}
 
+  left: 0;
+  right: 0;
+  bottom: 10%;
+}
 
 .black {
   color: var.$color-secondary;
@@ -26,7 +21,6 @@ figure {
   text-decoration: none;
   font-size: 1.5rem;
   padding: 1rem;
-
 }
 
 #blackarrow {
