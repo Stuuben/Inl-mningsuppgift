@@ -1,7 +1,7 @@
 @use "mixins" as mix;
 @use "variables" as var;
 
-.white {
+.white-arrow {
   color: var.$color-primary;
   font-size: 1.5rem;
   position: absolute;
@@ -10,7 +10,7 @@
   bottom: 10%;
 }
 
-.black {
+.black-arrow {
   color: var.$color-secondary;
   display: flex;
   justify-content: center;

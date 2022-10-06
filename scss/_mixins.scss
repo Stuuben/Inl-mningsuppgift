@@ -9,14 +9,14 @@
   align-items: center;
 }
 
-@mixin for-tablets {
-  @media (min-width: 768px) {
-    @content;
-  }
+@mixin image($size) {
+  width: $size;
+  height: $size;
+  @content;
 }
 
-@mixin for-desktop {
-  @media (min-width: 1200px) {
+@mixin for-tablets {
+  @media (min-width: 768px) {
     @content;
   }
 }
